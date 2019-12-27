@@ -1,3 +1,34 @@
-<div class="gi-container">
+<div class="gi-container"
+     *ngIf="isActive && introSet.length > 0"
+     (swipe)="onSwipe($event)">
+  <div class="gi-intro-container">
+    <div class="gi-close">
+      <span class="gi-close-icon" (click)="isActive = false;">&times;</span>
+    </div>
+    <div class="gi-item-container">
+      <div class="gi-item"
+           [@cardAnimator]="animationState"
+           (@cardAnimator.done)="animationState = ''">
+        <ng-container *ngIf="introSet[activeItem] as item">
+          <div>
+            <div class="gi-gesture"
+                 [ngClass]="item.gestureClass">
+
+            </div>
+            <div class="gi-intro-text">
+              {{item.text}}
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="gi-item-pagination">
+      <span class="gi-item-dot"
+            [ngClass]="{'active': i === activeItem}"
+            *ngFor="let item of introSet; let i = index;">
+
+      </span>
+    </div>
+  </div>
 
 </div>

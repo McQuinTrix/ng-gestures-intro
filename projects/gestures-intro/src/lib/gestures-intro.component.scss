@@ -1,4 +1,8 @@
 .gi-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -6,4 +10,81 @@
   right: 0px;
 
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gi-intro-container{
+
+}
+
+.gi-item-container{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #555;
+  overflow: hidden;
+  .gi-intro-text{
+    max-width: 50vw;
+    padding: 0 10px;
+  }
+}
+
+.gi-gesture{
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 90px;
+}
+
+.gi-item-pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .gi-item-dot{
+    display: inline-block;
+    margin: 8px 3px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    &.active{
+      background-color: rgba(255,255,255,0.9);
+    }
+  }
+}
+
+.gi-gesture-tap{
+  background-image: url('https://i.imgur.com/Wizi2jU.png');
+}
+
+.gi-gesture-double-tap{
+  background-image: url('https://i.imgur.com/qVltEeL.png');
+}
+
+.gi-gesture-drag{
+  background-image: url('https://i.imgur.com/eqHnUnM.png');
+}
+
+.gi-gesture-flick{
+  background-image: url('https://i.imgur.com/mmoVCDA.png');
+}
+
+.gi-gesture-pinch{
+  background-image: url('https://i.imgur.com/UmLGT7R.png');
+}
+
+.gi-gesture-spread{
+  background-image: url('https://i.imgur.com/tZYKvK3.png');
+}
+
+.gi-close{
+  display: flex;
+  justify-content: center;
+  .gi-close-icon{
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+  }
 }
