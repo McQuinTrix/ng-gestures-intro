@@ -1,6 +1,24 @@
 {
-  "name": "gestures-intro",
-  "version": "0.0.1",
+  "name": "ng-gestures-intro",
+  "version": "1.0.2",
+  "description": "An Angular Library to show users instructions with hand gestures images while introducing the app/feature.",
+  "author": "Harshal Carpenter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McQuinTrix/ng-gestures-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McQuinTrix/ng-gestures-intro/issues"
+  },
+  "homepage": "https://github.com/McQuinTrix/ng-gestures-intro",
+  "keywords": [
+    "angular",
+    "typescript",
+    "javascript",
+    "intro",
+    "library"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"

@@ -3,7 +3,7 @@
      (swipe)="onSwipe($event)">
   <div class="gi-intro-container">
     <div class="gi-close">
-      <span class="gi-close-icon" (click)="isActive = false;">&times;</span>
+      <span class="gi-close-icon" (click)="isActive = false;close.emit();">&times;</span>
     </div>
     <div class="gi-item-container">
       <div class="gi-item"

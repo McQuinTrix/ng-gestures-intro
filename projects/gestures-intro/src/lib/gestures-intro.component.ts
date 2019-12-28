@@ -37,6 +37,7 @@ export class GesturesIntroComponent implements OnInit {
 
   @HostListener('document:keydown.escape', ['$event']) onEscape(event: KeyboardEvent) {
     this.isActive = false;
+    this.close.emit();
   }
   @HostListener('document:keydown', ['$event']) onKeyDown($event: KeyboardEvent) {
     switch ($event.keyCode) {

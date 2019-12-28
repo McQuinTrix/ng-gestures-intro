@@ -1,5 +1,5 @@
 {
-  "name": "ng-gestures-intro",
+  "name": "ng-gestures-intro-full-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "buildGestures": "ng build gestures-intro",
-    "postpackage": "tar -cvzf dist.tgz -C dist ."
+    "updatePatch": "cd projects/gestures-intro && npm version patch",
+    "buildPublish": "rm -rf ./dist && npm run buildGestures && cd dist/gestures-intro && npm publish"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@angular/router": "^8.2.4",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
+    "ng-gestures-intro": "file:dist/gestures-intro/ng-gestures-intro-1.0.0.tgz",
     "rxjs": "6.5.3",
     "zone.js": "~0.9.1"
   },
