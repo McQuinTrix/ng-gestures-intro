@@ -1,6 +1,6 @@
 {
   "name": "ng-gestures-intro",
-  "version": "1.0.2",
+  "version": "1.0.10",
   "description": "An Angular Library to show users instructions with hand gestures images while introducing the app/feature.",
   "author": "Harshal Carpenter",
   "repository": {

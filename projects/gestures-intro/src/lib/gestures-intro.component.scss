@@ -10,6 +10,8 @@
   right: 0px;
 
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  overflow: hidden;
 }
 
 .gi-intro-container{
@@ -23,6 +25,7 @@
   box-shadow: 0 0 10px #555;
   overflow: hidden;
   .gi-intro-text{
+    text-align: center;
     max-width: 50vw;
     padding: 0 10px;
   }
@@ -82,8 +85,8 @@
   justify-content: center;
   .gi-close-icon{
     display: inline-block;
-    padding: 3px 8px;
-    background-color: white;
+    padding: 3px 10px;
+    background-color: #fff;
     border-radius: 50%;
     margin: 5px;
   }
