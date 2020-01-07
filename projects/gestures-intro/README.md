@@ -6,6 +6,10 @@ An Angular Library to show users instructions with hand gestures images while in
 
 So we can show users how to interact with website efficiently and how they can get most out of it ! Also this library is very generic and easy to use so you don;t have to start from scratch in making introduction to website.
 
+## How does it look ?
+
+![Gesture:FLICK | DOUBLE_TAP](https://i.imgur.com/bjd722v.png) 
+
 ## How to use this ?
 
 Gestures intro can be used in following way:
