@@ -10,6 +10,8 @@
     "e2e": "ng e2e",
     "buildGestures": "ng build gestures-intro",
     "updatePatch": "cd projects/gestures-intro && npm version patch",
+    "updateMinor": "cd projects/gestures-intro && npm version minor",
+    "updateMajor": "cd projects/gestures-intro && npm version major",
     "buildPublish": "rm -rf ./dist && npm run buildGestures && cd dist/gestures-intro && npm publish"
   },
   "private": true,
