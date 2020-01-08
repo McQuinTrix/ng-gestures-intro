@@ -1,6 +1,6 @@
 {
   "name": "ng-gestures-intro",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "An Angular Library to show users instructions with hand gestures images while introducing the app/feature.",
   "author": "Harshal Carpenter",
   "repository": {
@@ -22,6 +22,7 @@
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
-    "@angular/forms": "^8.2.14"
+    "@angular/forms": "^8.2.14",
+    "hammerjs": "^2.0.8"
   }
 }
