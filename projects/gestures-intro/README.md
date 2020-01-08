@@ -8,6 +8,8 @@ So we can show users how to interact with website efficiently and how they can g
 
 ## How does it look ?
 
+[Stackblitz Demo >>](https://stackblitz.com/edit/angular-ncbxwb)
+
 ![Gesture:FLICK | DOUBLE_TAP](https://i.imgur.com/bjd722v.png) 
 
 ## How to use this ?
