@@ -27,6 +27,7 @@ export class GesturesIntroComponent implements OnInit {
   @Output() close = new EventEmitter();
   activeItem = 0;
   animationState = '';
+  Hammer = Hammer;
   private _isActive = true;
   get isActive() {
     return this._isActive;

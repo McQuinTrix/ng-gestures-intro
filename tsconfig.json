@@ -20,10 +20,10 @@
       "dom"
     ],
     "paths": {
-      "gestures-intro": [
+      "ng-gestures-intro": [
         "dist/gestures-intro"
       ],
-      "gestures-intro/*": [
+      "ng-gestures-intro/*": [
         "dist/gestures-intro/*"
       ]
     }

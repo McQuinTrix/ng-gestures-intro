@@ -3,7 +3,7 @@
      (swipe)="onSwipe($event)">
   <div class="gi-intro-container">
     <div class="gi-close">
-      <span class="gi-close-icon" (click)="isActive = false;close.emit();">&times;</span>
+      <span class="gi-close-icon" (click)="isActive = false;close.emit();">Close</span>
     </div>
     <div class="gi-item-container">
       <div class="gi-item"
@@ -20,6 +20,18 @@
             </div>
           </div>
         </ng-container>
+      </div>
+      <div class="gi-footer">
+        <button class="nav-button"
+                *ngIf="!(activeItem === 0)"
+                (click)="onSwipe({direction: Hammer.DIRECTION_RIGHT})">
+          Previous
+        </button>
+        <button class="nav-button"
+                *ngIf="!(activeItem === introSet.length - 1)"
+                (click)="onSwipe({direction: Hammer.DIRECTION_LEFT})">
+          Next
+        </button>
       </div>
     </div>
     <div class="gi-item-pagination">
